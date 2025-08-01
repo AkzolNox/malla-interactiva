@@ -1,7 +1,15 @@
-/* Paleta de colores: Vino (#722F37), Dorado (#D4AF37), Beige (#F5F5DC) */
+/* Paleta de colores principal */
+:root {
+    --vino: #722F37;
+    --dorado: #D4AF37;
+    --beige: #F5F5DC;
+    --vino-oscuro: #5a252c;
+}
+
+/* Estilos generales */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #F5F5DC; /* Beige claro */
+    background-color: var(--beige);
     color: #333;
     margin: 0;
     padding: 20px;
@@ -17,14 +25,15 @@ body {
 }
 
 h1 {
-    color: #722F37; /* Vino */
+    color: var(--vino);
     text-align: center;
-    border-bottom: 2px solid #D4AF37; /* Dorado */
+    border-bottom: 2px solid var(--dorado);
     padding-bottom: 10px;
 }
 
+/* Estilos de semestres */
 .semester {
-    background-color: #722F37; /* Vino */
+    background-color: var(--vino);
     color: white;
     padding: 15px;
     margin: 10px 0;
@@ -34,9 +43,10 @@ h1 {
 }
 
 .semester:hover {
-    background-color: #5a252c; /* Vino más oscuro */
+    background-color: var(--vino-oscuro);
 }
 
+/* Estilos de cursos */
 .courses {
     display: none;
     padding: 10px;
@@ -46,7 +56,7 @@ h1 {
 }
 
 .course {
-    background-color: #D4AF37; /* Dorado */
+    background-color: var(--dorado);
     color: #333;
     padding: 8px;
     margin: 5px 0;
