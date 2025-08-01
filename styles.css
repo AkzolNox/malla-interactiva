@@ -1,0 +1,59 @@
+/* Paleta de colores: Vino (#722F37), Dorado (#D4AF37), Beige (#F5F5DC) */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F5F5DC; /* Beige claro */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #722F37; /* Vino */
+    text-align: center;
+    border-bottom: 2px solid #D4AF37; /* Dorado */
+    padding-bottom: 10px;
+}
+
+.semester {
+    background-color: #722F37; /* Vino */
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.semester:hover {
+    background-color: #5a252c; /* Vino más oscuro */
+}
+
+.courses {
+    display: none;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.course {
+    background-color: #D4AF37; /* Dorado */
+    color: #333;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 3px;
+    transition: transform 0.2s;
+}
+
+.course:hover {
+    transform: translateX(5px);
+}
